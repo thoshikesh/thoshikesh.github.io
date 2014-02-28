@@ -1,0 +1,280 @@
+html, body {
+	height: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #29282c;
+	color: white;
+}
+
+.clear:before,.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.wrapper {
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.wrapper-sm {
+	max-width: 600px;
+}
+
+#header {
+  color: #fff;
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header .wrapper {
+	display: table;
+}
+
+#banner {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#banner-holder {
+	background-image: url(../img/bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.2;
+}
+
+#banner-holder img {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+#site-logo {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#nav-menu {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.nav-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nav-links li {
+	display: inline-block;
+}
+
+.nav-links li a {
+	display: inline-block;
+	color: #ddd;
+	padding-bottom: 2px;
+	transition: color 0.7s;
+	-webkit-transition: color 0.7s;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.nav-links li a:hover {
+	color: #ff0;
+	border-bottom: 1px solid #ff0;
+	-webkit-transition: all .35s ease-in;
+   -moz-transition: all .35s ease-in;
+   -o-transition: all .35s ease-in;
+   -ms-transition: all .35s ease-in;
+   transition: all .35s ease-in;
+   -webkit-transition-property: all;
+   -webkit-transition-duration: .35s;
+   -webkit-transition-timing-function: ease-in;
+}
+
+.nav-links li span {
+	color: gray;
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+#landing {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+#landing .wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#intro {
+	text-align: center;
+}
+
+#intro p {
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.custom-hr {
+	width: 300px;
+	border: 2px solid white;
+}
+
+.hr-dot {
+	padding-bottom: 30px;
+}
+
+.content {
+	text-align: center;
+}
+
+p.tagline {
+	font-style: italic;
+	font-size: 22px;
+}
+
+.content p {
+	font-size: 19px;
+	line-height: 28px;
+}
+
+span.highlight {
+	color: #FF0;
+}
+
+.button-yellow {
+	margin: 20px;
+	background-color: #FF0;
+	font-size: 110%;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* RECENT WORK */
+
+#work ul {
+	padding: 0;
+	margin: 0;
+}
+
+.work-item {
+	max-width: 400px;
+	position: relative;
+	margin: 0 80px 20px 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.work-item:nth-child(even) {
+  margin-right: 0;
+}
+
+.work-item .img-wrapper {
+	width: 400px;
+	max-height: 270px;
+	overflow: hidden;
+	box-shadow: 1px 1px 1px #15121D;
+}
+
+.work-item .img-wrapper img {
+	opacity: 0.5;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.work-item .img-wrapper img:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+img:hover {
+  
+}
+
+.work-item h2 {
+	margin-bottom: 10px;
+}
+
+.work-item p {
+	margin: 0 0 15px;
+}
+
+/* FOOTER */
+
+#footer {
+	text-align: center;
+}
+
+#footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin: 30px 20px;
+}
+
+#footer ul li {
+	display: inline-block;
+	width: 30px;
+}
+
+#footer p {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#footer p span {
+	visibility: hidden;
+}

@@ -1,8 +1,137 @@
-<html>
-	<head>
-		<title>Thoshi's Test</title>
-	</head>
-	<body>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, reiciendis recusandae placeat voluptatum. Doloremque, esse, dolorum, velit repudiandae exercitationem quibusdam tenetur et reprehenderit voluptatem rem soluta ipsum recusandae impedit error!</p>
-	</body>
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome - Thoshi.me</title>
+
+        <!--[if lt IE 9]> HTML5Shiv
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--<link href="css/style.min.css" rel="stylesheet">-->
+        <link href="css/pure-min.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="banner">
+            <div id="banner-holder">
+                <img src="img/bg.jpg" alt="">
+            </div>
+        </div>
+    	<header id="header">
+    		<div class="wrapper">
+                <a href="#"><img src="img/logo.png" alt="Logo" id="site-logo"></a>
+    			<nav id="nav-menu">
+    				<ul class="nav-links">
+    					<li><a href="#">Home</a><span>•</span></li>
+    					<li><a href="#work">Work</a><span>•</span></li>
+    					<li><a href="#">Contact</a></li>
+    				</ul>
+    			</nav>
+    		</div>
+    	</header>
+        <div id="landing">
+            <div class="wrapper">
+                <div id="intro">
+                    <h1>Hello, I'm Thoshi</h1>
+                    <hr class="custom-hr">
+                    <p class="tagline"><span class="highlight">Website</span> or <span class="highlight">Graphic Design</span> needs? You've come to the right place.</p>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="wrapper wrapper-sm">
+                <div class="content">
+                    <h1>About Me</h1>
+                    <hr class="custom-hr">
+                    <p class="tagline">A long story short</p>
+                    <p class="hr-dot">• • •</p>
+                    <p>Of he no was so me nevermore. More then sat. My there stood or flutter farther ashore and. For some and scarcely one wished of <span class="highlight">doubtless</span> whom back.</p>
+                    <p>Pallas prophet from said i. On i we bird lamplight never he. Lent lost dreaming sat came maiden thy nevermore there an of. Nightly the fact that was at ungainly mystery cushions the.</p>
+                    <p>And with more. His that tis scarce in chamber of thee raven this. Quoth vainly beguiling that. The stately aidenn this obeisance. And the from. I at by door i the. Hope his the raven flung prophet floating meant you the. Tufted and.
+                    </p>
+                    <p><span class="hightlight">Want to say hi? Want to talk shop? Either way, feel free to</span></p>
+                    <a class="pure-button button-yellow" href="#">Contact me</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="work">
+            <div class="wrapper">
+                <div class="content">
+                    <h1>Recent Work</h1>
+                    <hr class="custom-hr">
+                    <p class="tagline">Showcasing some of my recent works</p>
+                    <p class="hr-dot">• • •</p>
+                    <ul class="clear">
+                        <li class="work-item">
+                            <div class="img-wrapper">
+                                <img src="img/work/pck.jpg" alt="Recent Work Screen Shot">
+                            </div>
+                            <h2>Work Heading</h2>
+                            <p>Work Description One liner</p>
+                        </li>
+                        <li class="work-item">
+                            <div class="img-wrapper">
+                                <img src="img/work/ab.jpg" alt="Recent Work Screen Shot">
+                            </div>
+                            <h2>Work Heading</h2>
+                            <p>Work Description One liner</p>
+                        </li>
+                        <li class="work-item">
+                            <div class="img-wrapper">
+                                <img src="img/work/cr.jpg" alt="Recent Work Screen Shot">
+                            </div>
+                            <h2>Work Heading</h2>
+                            <p>Work Description One liner</p>
+                        </li>
+                        <li class="work-item">
+                            <div class="img-wrapper">
+                                <img src="img/work/prt.jpg" alt="Recent Work Screen Shot">
+                            </div>
+                            <h2>Work Heading</h2>
+                            <p>Work Description One liner</p>
+                        </li>
+                    </ul>
+                    <a class="pure-button button-yellow" href="#">View more</a>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="wrapper wrapper-sm">
+                <hr class="hr-custom">
+                <ul class="social clear">
+                    <li class="social-icon">FB</li>
+                    <li class="social-icon">Da</li>
+                    <li class="social-icon">Mail</li>
+                </ul>
+                <p>Thoshikesh <span>•</span> &copy; <span>•</span> 2014</p>
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          var didScroll = false;
+          var banner = $("#banner-holder");
+          var $window = $(window);
+
+          $(window).scroll(function(){
+              didScroll = true;
+          });
+
+          window.setInterval(function () {
+            if (didScroll) {
+              if (1-$window.scrollTop()/1000 > -10) {
+                  banner.css({opacity: 0.2-$window.scrollTop()/2000});
+              }
+              didScroll = false;
+            }
+          }, 50);
+        });
+    </script>
 </html>
