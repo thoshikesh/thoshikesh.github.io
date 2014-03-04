@@ -81,7 +81,7 @@
                         $('#mail-feedback').removeClass('text-danger').addClass('text-success').html(data);
                     };                      
                 }, function (error) {
-                    $('#mail-feedback').html("Network error sending message - please try again");
+                    $('#mail-feedback').html("Network error sending message - please try again" + eroor);
                 });
             });
         });
